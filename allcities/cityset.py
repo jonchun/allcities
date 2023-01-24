@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-from collections import Set
 import logging
 import operator
 import random
@@ -11,7 +10,8 @@ from allcities.city import City
 
 logger = logging.getLogger('allcities.geonamesdata')
 
-class CitySet(Set):
+
+class CitySet(set):
     """
     Wrapper that represents a set of cities.
     """
